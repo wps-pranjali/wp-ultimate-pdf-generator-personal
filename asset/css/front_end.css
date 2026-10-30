@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+#light-box-guest {
+	background-color: seashell;
+	height: 400px;
+	outline: medium none black;
+	overflow: inherit;
+	width: 420px;
+	z-index: 999;
+}
+.mwb-export-popup {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	}
+	
+
+.mwb-export-popup #to-label {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	}
+	
+	
+	.mwb-export-popup #to-label input {
+	margin: 0 auto;
+	}
+	
+	.mwb-export-popup #guest_email {
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	max-width: 200px;
+	margin: 0 auto;
+	}

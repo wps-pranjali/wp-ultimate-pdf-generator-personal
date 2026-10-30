@@ -1,0 +1,22 @@
+<wpml-config>
+  <admin-texts>
+    <key name="ptp_settings">
+      <key name="sd">
+        <key name="8">
+          <key name="*"/>
+          <key name="company_name"/>
+          <key name="custom_tagline"/>
+        </key>
+        <key name="1">
+          <key name="custom_title"/>
+        </key>
+      </key>
+      <key name="3">
+          <key name="watermark_text"/>
+      </key>
+      <key name="7">
+          <key name="custom_footer"/>
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

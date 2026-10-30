@@ -1,0 +1,1304 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wp Ultimate Pdf Generator 1.3.3\n"
+"POT-Creation-Date: 2026-03-31 14:41+0530\n"
+"PO-Revision-Date: 2026-03-31 14:41+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: .\n"
+
+#: Content/mbw-pdf-gen-log.php:22
+msgid "Record"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:23
+msgid "Records"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:80
+msgid "No records available."
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:144 libs/mwbpdf-tab-general.php:803
+msgid "Post Name"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:145
+msgid "User Email"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:146
+msgid "User Name"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:147
+msgid "Post Type"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:148
+msgid "Export Date"
+msgstr ""
+
+#: Content/mbw-pdf-gen-log.php:149
+msgid "Remove Log"
+msgstr ""
+
+#: Content/pdf_content.php:9
+msgid "Wp Ultimate Pdf Generator Settings"
+msgstr ""
+
+#: export/adminbulk.php:585 wp-ultimate-pdf.php:768 wp-ultimate-pdf.php:1144
+#: wp-ultimate-pdf.php:3178 wp-ultimate-pdf.php:4328 wp-ultimate-pdf.php:4848
+msgid "Author"
+msgstr ""
+
+#: export/adminbulk.php:591 wp-ultimate-pdf.php:3186 wp-ultimate-pdf.php:3194
+#: wp-ultimate-pdf.php:4336 wp-ultimate-pdf.php:4349 wp-ultimate-pdf.php:4858
+msgid "Categories"
+msgstr ""
+
+#: export/adminbulk.php:598 wp-ultimate-pdf.php:1152 wp-ultimate-pdf.php:3211
+#: wp-ultimate-pdf.php:3224 wp-ultimate-pdf.php:4366 wp-ultimate-pdf.php:4379
+msgid "Tagged as"
+msgstr ""
+
+#: export/adminbulk.php:648 wp-ultimate-pdf.php:566 wp-ultimate-pdf.php:3274
+#: wp-ultimate-pdf.php:4905
+msgid "Description"
+msgstr ""
+
+#: export/adminbulk.php:719 export/adminbulk.php:750 wp-ultimate-pdf.php:1160
+#: wp-ultimate-pdf.php:3336 wp-ultimate-pdf.php:4796 wp-ultimate-pdf.php:4980
+msgid "Date"
+msgstr ""
+
+#: export/adminbulk.php:724 wp-ultimate-pdf.php:1165 wp-ultimate-pdf.php:3341
+#: wp-ultimate-pdf.php:4801 wp-ultimate-pdf.php:4985
+msgid "Print Date"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:486 libs/mwbpdf-tab-general.php:522
+msgid "Display Settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:489 libs/mwbpdf-tab-general.php:523
+msgid "General Settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:492 libs/mwbpdf-tab-general.php:524
+msgid "Body"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:495 libs/mwbpdf-tab-general.php:525
+msgid "Header"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:498 libs/mwbpdf-tab-general.php:526
+msgid "Footer"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:501 libs/mwbpdf-tab-general.php:528
+msgid "Advance Settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:505 libs/mwbpdf-tab-general.php:527
+msgid "Watermark"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:508 libs/mwbpdf-tab-general.php:529
+msgid "Custom Bullet Style"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:511 libs/mwbpdf-tab-general.php:530
+msgid "Post Meta Details"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:514 libs/mwbpdf-tab-general.php:531
+msgid "Post Embed Source"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:517
+msgid "first page setting"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:532
+msgid "First page settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:561
+msgid "Predefined Templates"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:562
+msgid "Upload Custom Cover"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:606
+msgid "Display Option"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:610
+msgid "Front End"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:620
+msgid "Show for all guest user"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:630
+msgid "Show for logged in user"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:640
+msgid "Email option for guest in user"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:644
+msgid "Admin Panel"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:648
+msgid "Enable Shortcode"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:650
+msgid ""
+"If you enable shortcode then you will get authority to apply shortcode "
+"anywhere in post content while adding or editing post."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:656 libs/mwbpdf-tab-general.php:764
+#: libs/mwbpdf-tab-general.php:1043 libs/mwbpdf-tab-general.php:1353
+#: libs/mwbpdf-tab-general.php:1533 libs/mwbpdf-tab-general.php:1724
+#: libs/mwbpdf-tab-general.php:1892 libs/mwbpdf-tab-general.php:2017
+#: libs/mwbpdf-tab-general.php:2289 libs/mwbpdf-tab-general.php:2411
+#: libs/mwbpdf-tab-general.php:2644
+msgid "Apply Setting"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:660 libs/mwbpdf-tab-general.php:748
+#: libs/mwbpdf-tab-general.php:1025 libs/mwbpdf-tab-general.php:1336
+#: libs/mwbpdf-tab-general.php:1707 libs/mwbpdf-tab-general.php:1874
+#: libs/mwbpdf-tab-general.php:2000 libs/mwbpdf-tab-general.php:2272
+#: libs/mwbpdf-tab-general.php:2395 libs/mwbpdf-tab-general.php:2628
+msgid "Default Settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:678
+msgid "Remove Setting"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:681
+msgid "Preview Setting"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:686
+msgid "Save My Setting :"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:687
+msgid "Set your new setting name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:690 libs/mwbpdf-tab-general.php:969
+#: libs/mwbpdf-tab-general.php:1277 libs/mwbpdf-tab-general.php:1464
+#: libs/mwbpdf-tab-general.php:1648 libs/mwbpdf-tab-general.php:1821
+#: libs/mwbpdf-tab-general.php:1946 libs/mwbpdf-tab-general.php:2051
+#: libs/mwbpdf-tab-general.php:2353 libs/mwbpdf-tab-general.php:2585
+#: libs/mwbpdf-tab-general.php:2678
+msgid "Save Settings"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:726 libs/mwbpdf-tab-general.php:1005
+#: libs/mwbpdf-tab-general.php:1312 libs/mwbpdf-tab-general.php:1496
+#: libs/mwbpdf-tab-general.php:1686 libs/mwbpdf-tab-general.php:1853
+#: libs/mwbpdf-tab-general.php:1977 libs/mwbpdf-tab-general.php:2252
+#: libs/mwbpdf-tab-general.php:2375 libs/mwbpdf-tab-general.php:2610
+msgid ""
+"Please Create  at least one custom Setting or use existing one to make "
+"changes !!"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:745 libs/mwbpdf-tab-general.php:1022
+#: libs/mwbpdf-tab-general.php:1332 libs/mwbpdf-tab-general.php:1513
+#: libs/mwbpdf-tab-general.php:1704 libs/mwbpdf-tab-general.php:1871
+#: libs/mwbpdf-tab-general.php:1997 libs/mwbpdf-tab-general.php:2269
+#: libs/mwbpdf-tab-general.php:2392 libs/mwbpdf-tab-general.php:2625
+msgid "Select Setting"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:768
+msgid "Featured Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:771
+msgid "Include Featured Image."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:775
+msgid "Include Cache"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:778
+msgid ""
+"By default PDF will be generated on fly. Select to generate PDF from cache."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:782
+msgid "Schedule Cache Updation"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:788 libs/mwbpdf-tab-general.php:838
+#: libs/mwbpdf-tab-general.php:922
+msgid "None"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:789
+msgid "Daily"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:790
+msgid "Weekly"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:796
+msgid "Default File Name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:802
+msgid "Post ID"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:804
+msgid "CustomName_ID"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:809
+msgid "Custom file name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:812
+msgid "set the custom name of the downloaded pdf ."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:819
+msgid "Check to fill color "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:822
+msgid "check this if you want to set the pdf page color ."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:826
+msgid "Set pdf page color"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:829
+msgid "set the page color of the downloaded pdf ."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:839
+msgid "First Name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:840
+msgid "Last Name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:841
+msgid "Nickname"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:845
+msgid "Display Author Detail"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:865
+msgid "Check this if you want to display the author name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:869
+msgid "Display Post Category List"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:872
+msgid "Check this if you want to add post category in pdf."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:876
+msgid "Display Post Tag List"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:879
+msgid "Check this if you want to add post tag in pdf."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:883
+msgid "Display Post Date"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:885
+msgid "Check this if you want to add postdate in pdf."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:889
+msgid "Display Print Date"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:891
+msgid "Check this if you want to add current date in pdf."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:896
+msgid "Select Date Format"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:901
+msgid "yyyy/mm/dd"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:902
+msgid "mm/dd/yyyy"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:903
+msgid "d MM yyyy"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:904
+msgid "DD, d MM yyyy"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:905
+msgid "yyyy-mm-dd"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:906
+msgid "dd/mm/yyyy"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:914
+msgid "Button Alignment"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:919
+msgid "Left Align"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:920
+msgid "Right Align"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:921
+msgid "Center"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:928
+msgid "Button Placement"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:933
+msgid "Above Content"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:934
+msgid "Below Content"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:935
+msgid "Below and Above Content"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:938
+msgid "Place your pdf icon"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:942
+msgid "Select Button"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:947
+msgid "Default"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:948
+msgid "Custom"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:953 libs/mwbpdf-tab-general.php:1371
+#: libs/mwbpdf-tab-general.php:1811 libs/mwbpdf-tab-general.php:2028
+#: libs/mwbpdf-tab-general.php:2464 libs/mwbpdf-tab-general.php:2496
+#: libs/mwbpdf-tab-general.php:2669
+msgid "Upload/Add image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:961 libs/mwbpdf-tab-general.php:1380
+#: libs/mwbpdf-tab-general.php:1812 libs/mwbpdf-tab-general.php:2029
+#: libs/mwbpdf-tab-general.php:2465 libs/mwbpdf-tab-general.php:2504
+#: libs/mwbpdf-tab-general.php:2670
+msgid "Remove image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1047
+msgid "Post Template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1055 libs/mwbpdf-tab-general.php:1074
+#: libs/mwbpdf-tab-general.php:2438
+msgid "Template 1"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1056 libs/mwbpdf-tab-general.php:1075
+#: libs/mwbpdf-tab-general.php:2439
+msgid "Template 2"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1057 libs/mwbpdf-tab-general.php:1076
+#: libs/mwbpdf-tab-general.php:2440
+msgid "Template 3"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1059 libs/mwbpdf-tab-general.php:1078
+#: libs/mwbpdf-tab-general.php:2443
+msgid "Preview Template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1061 libs/mwbpdf-tab-general.php:2445
+msgid "Please choose the post template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1066
+msgid "Product Template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1080
+msgid "Please choose the product template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1085
+msgid "Number of Product PostMeta"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1088
+msgid ""
+"Please enter number of postmeta fields to be displayed along with short "
+"description."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1093
+msgid "Image Scaling Ratio"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1096
+msgid "Please enter image ratio here(default is 1.3)"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1101
+msgid "Top Margin"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1103
+msgid "Please enter top margin here(default is 25"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1107
+msgid "Left Margin"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1109
+msgid "Please enter left margin here (default is 20"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1113
+msgid "Right Margin"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1115
+msgid "Please enter your right margin here(default is 20"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1119
+msgid "Page Size"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1132
+msgid "Size of your Page (default is A4)."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1136
+msgid "Orientation"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1143
+msgid "Portrait"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1150
+msgid "Landscape"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1151
+msgid "Select the desired page orientation (default is Portrait)."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1155
+msgid "Unit of Measurement"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1161
+msgid "Point"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1162
+msgid "Millimeter"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1163
+msgid "Centimeter"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1164
+msgid "Inch"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1182
+msgid "Select the desired unit of measurement (default is mm)."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1187
+msgid "Content Font"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1201
+msgid "Content Font Size"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1208
+msgid "Custom Title"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1211
+msgid "Enter custom title to replace with post title."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1215
+msgid "Show pdf icon according to user roles"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1217
+msgid ""
+"Check this if you want to show download pdf icon according to the user roles"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1221
+msgid "Select user role for which you want to show the pdf icon"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1249
+msgid "RTL Support"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1253
+msgid ""
+"Select if you want to generate pdf for Post in Persian and Arabic language"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1257
+msgid "Custom CSS"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1259
+msgid "Check this if you want to apply your CSS."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1358
+msgid "Page Header"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1368 libs/mwbpdf-tab-general.php:2491
+msgid "Upload an Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1386
+msgid "Hide QR code "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1390
+msgid "Hide Qr code in header."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1395
+msgid "Hide site Name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1399
+msgid "Hide site name in header."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1404
+msgid "Hide site description"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1408
+msgid "Hide site description in header."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1413
+msgid "Hide site URL"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1417
+msgid "Hide site url in header."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1421
+msgid "Logo Image Factor"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1424
+msgid ""
+"This will be applied to logo width/height to provide logo image some "
+"surrounding space."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1429
+msgid "Logo Top Margin"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1432
+msgid "Enter your desired top margin (default is 2"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1437
+msgid "Header Font"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1454
+msgid "Header Font Size"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1540 libs/mwbpdf-tab-general.php:2517
+msgid "Custom Footer Text"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1554
+msgid "Footer Font"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1568
+msgid "Footer Font Size"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1571
+msgid "Select desired footer font size(default is 10"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1575
+msgid "Footer Cell Width"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1579
+msgid "Select desired Footer Cell Width(default is 0"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1583
+msgid "Footer Cell Minimum Height"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1587
+msgid "Select desired Footer Cell Minimum Height(default is 0"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1591
+msgid "Footer Cell Upper Left Corner (X)"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1594
+msgid "Select desired Footer Cell Upper Left Corner (X)(default is 15"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1598
+msgid "Footer Cell Upper Left Corner (Y)"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1603
+msgid "Select your desired Footer Cell Upper Left Corner (Y)(default is 290"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1607
+msgid "Footer Margin"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1611
+msgid "Select desired footer font margin(default is 10"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1625
+msgid "Footer Cell Text Alignment"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1633
+msgid "Select your desired text alignment for the footer cell.."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1637
+msgid "Footer Cell Auto-padding"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1701
+msgid ""
+"This option gives you the possibility to add watermark text to PDF pages."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1728
+msgid "Watermark Text"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1736
+msgid "Watermark Font"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1750
+msgid "Rotation"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1756
+msgid "Watermark Text:"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1765
+msgid "Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1773
+msgid "Image Height"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1779
+msgid "Image Width"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1785
+msgid "Image X Coordinate"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1791
+msgid "Image Y Coordinate"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1797
+msgid "Image Transparency"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1803
+msgid "Watermark Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1896
+msgid "Browse to Select Your Font in "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1896
+msgid ".ttf format"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1902
+msgid "Uploading Now"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1903
+msgid "Font is Uploaded"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1909
+msgid "Set Page Rotation"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1916
+msgid "No Rotation"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1917
+msgid "90 degree"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1918
+msgid "180 degree"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1919
+msgid "270 degree"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1926
+msgid "Set FontStretching"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1930
+msgid "Select desired font Stretching(default is 100"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1935
+msgid "Set FontSpacing"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1939
+msgid "Select desired font Spacing(default is 0"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:1994
+msgid "choose the bullet symbol for the PDF."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2021
+msgid "Bullet Symbol"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2034
+msgid "Custom Bullet Image Height"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2037
+msgid "Select custom Bullet Image Height (default 3 "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2041
+msgid "Custom Bullet Image Width"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2044
+msgid "Select custom Bullet Image Width (default 3 "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2072
+msgid "Embed Sources"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2073
+msgid "Setting saved!"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2090
+#, php-format
+msgid "Enable this to %s on your posts, pages, or custom post types"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2093
+#, php-format
+msgid "Enable this to embed %s on your posts, pages, or custom post types"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2116
+msgid "Prefer a quick guide ? "
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2116
+msgid "Check out our documentation to understand how these settings work."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2296
+msgid "Allowed Post Types"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2297
+msgid ""
+"Select Post type for which You want to export PDF. On click, you can see "
+"what meta fields post type have just checked the post type and display it "
+"over PDF."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2337
+msgid " Meta Details"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2417
+msgid "predefined Template PDF"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2421
+msgid "Enable Predefined Templates"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2425
+msgid "Enable and choose the template for cover page."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2430
+msgid "Cover Template"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2441
+msgid "Template 4"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2456 libs/mwbpdf-tab-general.php:2661
+msgid "cover page Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2470
+msgid "company name"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2482
+msgid "Logo"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2494
+msgid "Upload your organization’s logo here"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2509
+msgid "Company Tagline"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2525
+msgid "Enable for email"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2529
+msgid "Enable and enter your email."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2540
+msgid "Enable for contact"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2544
+msgid "Enable and enter your contact."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2554
+msgid "Enable for Address"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2558
+msgid "Enable and enter your Address."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2568
+msgid "Enable for website URL"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2572
+msgid "Enable and enter your Site Url."
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2649
+msgid "Upload your Cover Page Image"
+msgstr ""
+
+#: libs/mwbpdf-tab-general.php:2654
+msgid "Enable for custom cover page"
+msgstr ""
+
+#: libs/mwbpdf-tab-license.php:18
+#, php-format
+msgid ""
+"This is the License Activation Panel. After purchasing extension from "
+"Codecanyon you will get the purchase code of this extension. Please verify "
+"your purchase below so that you can use feature of this plugin. You can "
+"access your purchase code for this plugin from <a  href=\"%s\" >Here</a>"
+msgstr ""
+
+#: libs/mwbpdf-tab-license.php:26
+msgid "Enter Purchase Code"
+msgstr ""
+
+#: wp-ultimate-pdf-update.php:189
+msgid "Plugin Description"
+msgstr ""
+
+#: wp-ultimate-pdf-update.php:193
+msgid "Plugin Change Log"
+msgstr ""
+
+#: wp-ultimate-pdf.php:404
+msgid "Successfully Verified"
+msgstr ""
+
+#: wp-ultimate-pdf.php:439
+msgid "Wp Ultimate Pdf Generator"
+msgstr ""
+
+#: wp-ultimate-pdf.php:450
+msgid "Wp Ultimate Pdf Generator Log"
+msgstr ""
+
+#: wp-ultimate-pdf.php:463
+msgid "Log Of PDF downloads"
+msgstr ""
+
+#: wp-ultimate-pdf.php:512
+msgid "Record deleted successfully"
+msgstr ""
+
+#: wp-ultimate-pdf.php:521 wp-ultimate-pdf.php:553
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostroris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor "
+"sit amet, consectetur adipisicing elit, sed do eiusmod  et dolore magna "
+"aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+"nisi ut aliquip ex ea commodo consequat."
+msgstr ""
+
+#: wp-ultimate-pdf.php:521
+msgid ""
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+"doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore "
+"veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim "
+"ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia "
+"consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque "
+"porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, "
+"adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et "
+"dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis "
+"nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid "
+"ex ea commodi consequatur?  Nam libero tempore, cum soluta nobis est "
+"eligendi opti Quis autem vel eum iure reprehenderit qui in ea voluptate "
+"velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum "
+"fugiat quo voluptas nulla pariatur? "
+msgstr ""
+
+#: wp-ultimate-pdf.php:521
+msgid ""
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis "
+"praesentium voluptatum deleniti atque corrupti quos dolores et quas "
+"molestias excepturi sint occaecati cupiditate non provident, similique sunt "
+"in culpa qui officia deserunt mollitia animi, id est laborum et dolorum "
+"fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero "
+"tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus "
+"id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis "
+"dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut "
+"rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et "
+"molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente "
+"delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut "
+"perferendis doloribus asperiores repellat."
+msgstr ""
+
+#: wp-ultimate-pdf.php:522 wp-ultimate-pdf.php:1177
+msgid "This Is An H2 Tag"
+msgstr ""
+
+#: wp-ultimate-pdf.php:523 wp-ultimate-pdf.php:1178
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
+msgstr ""
+
+#: wp-ultimate-pdf.php:525 wp-ultimate-pdf.php:530 wp-ultimate-pdf.php:1181
+#: wp-ultimate-pdf.php:1186
+msgid "First Item"
+msgstr ""
+
+#: wp-ultimate-pdf.php:526 wp-ultimate-pdf.php:531 wp-ultimate-pdf.php:1182
+#: wp-ultimate-pdf.php:1187
+msgid "Second Item"
+msgstr ""
+
+#: wp-ultimate-pdf.php:527 wp-ultimate-pdf.php:532 wp-ultimate-pdf.php:1183
+#: wp-ultimate-pdf.php:1188
+msgid "Third Item"
+msgstr ""
+
+#: wp-ultimate-pdf.php:551
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostroris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor "
+"sit amet, consectetur adipisicing elit, sed do eiusmod  et dolore magna "
+"aliqua. "
+msgstr ""
+
+#: wp-ultimate-pdf.php:553
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labo magna aliqua. Ut enim ad minim veniam, quis "
+"nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. "
+msgstr ""
+
+#: wp-ultimate-pdf.php:553
+msgid ""
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis "
+"praesentium voluptatum deleniti atque corrupti quos dolores et quas "
+"molestias excepturi sint occaecati cupiditate non provident, similique sunt "
+"in culpa qui officia deserunt mollitia animi, id est laborum et dolorum "
+"fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero "
+"tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus "
+"id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis "
+"dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut "
+"rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et "
+"molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente "
+"delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut "
+"perferendis doloribus asperiores repellat. "
+msgstr ""
+
+#: wp-ultimate-pdf.php:628 wp-ultimate-pdf.php:997
+msgid "Default Post"
+msgstr ""
+
+#: wp-ultimate-pdf.php:772 wp-ultimate-pdf.php:1148
+msgid "Category"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1176
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1557
+msgid "Shortcode For PDF"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1576
+msgid "Demo"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1577
+msgid "Documentation"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1578
+msgid "Support"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1579
+msgid "Services"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1580
+msgid "Video"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1702
+msgid "Post exported."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1766 wp-ultimate-pdf.php:1788
+msgid "Export to pdf"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1766 wp-ultimate-pdf.php:1788
+msgid "Exportpdf"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1805
+msgid "Enter your email Address"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1874
+msgid "PDF link on front end post types."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1875
+msgid "Enable this option to apply pdf functionality on front end."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1887
+msgid "PDF link on post types table."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1888
+msgid "Enable this option to apply pdf functionality on backend end."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1899
+msgid "Enable shortcode on post types"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1900
+msgid ""
+"Enable this setting if you want to display paste shortcode on posts and "
+"pages."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1911
+msgid "Name of you settings"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1912
+msgid "Enter the name of the setting. You can have more than one setting."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1923
+msgid "Choose settings"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1924
+msgid "You can choose between number of PDF settings."
+msgstr ""
+
+#: wp-ultimate-pdf.php:1937
+msgid "Export"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1938
+msgid "Are you sure you want to delete this setting"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1941
+msgid "Are you sure ? because this will reset your current setting"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1942
+msgid "Sorry! You can not delete default setting"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1943
+msgid "Setting Deleted Successfuly"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1944
+msgid "Please select a setting name"
+msgstr ""
+
+#: wp-ultimate-pdf.php:1945
+msgid "Please enter a setting name"
+msgstr ""
+
+#: wp-ultimate-pdf.php:2130
+msgid "Settings Saved and Applied Successfully !"
+msgstr ""
+
+#: wp-ultimate-pdf.php:2174
+msgid "Settings Saved Successfully !"
+msgstr ""
+
+#: wp-ultimate-pdf.php:2197
+msgid "Settings"
+msgstr ""
+
+#: wp-ultimate-pdf.php:5104 wp-ultimate-pdf.php:5107 wp-ultimate-pdf.php:5114
+#: wp-ultimate-pdf.php:5117 wp-ultimate-pdf.php:5151 wp-ultimate-pdf.php:5154
+#: wp-ultimate-pdf.php:5161 wp-ultimate-pdf.php:5164 wp-ultimate-pdf.php:5177
+#: wp-ultimate-pdf.php:5180 wp-ultimate-pdf.php:5186 wp-ultimate-pdf.php:5189
+msgid "Download PDF"
+msgstr ""
+
+#: wp-ultimate-pdf.php:5126 wp-ultimate-pdf.php:5129 wp-ultimate-pdf.php:5136
+#: wp-ultimate-pdf.php:5139
+msgid "Export pdf to your Email"
+msgstr ""
+
+#: wp-ultimate-pdf.php:5126 wp-ultimate-pdf.php:5129 wp-ultimate-pdf.php:5136
+#: wp-ultimate-pdf.php:5139
+msgid "Export to PDF"
+msgstr ""
+
+#: wp-ultimate-pdf.php:5209
+msgid "PDF Cache Schedule Interval"
+msgstr ""
+
+#: wp-ultimate-pdf.php:5425
+msgid ""
+"Error occured due to wrong file you have added or there may be permission "
+"error."
+msgstr ""
