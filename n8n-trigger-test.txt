@@ -1,0 +1,1 @@
+This file is created to test the n8n GitHub Pull Request automation trigger.
