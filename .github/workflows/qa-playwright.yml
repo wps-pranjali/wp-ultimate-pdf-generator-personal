@@ -59,3 +59,27 @@ jobs:
           echo "WordPress did not start"
           docker logs wordpress-test
           exit 1
+
+          
+      - name: Install WordPress and activate PDF plugin
+        run: |
+          docker exec wordpress-test bash -c '
+            curl -fsSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o /tmp/wp-cli.phar
+            php /tmp/wp-cli.phar core install \
+              --url=http://localhost \
+              --title="WordPress QA Testing" \
+              --admin_user=admin \
+              --admin_password=qa-test-password \
+              --admin_email=qa@example.com \
+              --skip-email \
+              --allow-root
+          '
+
+          docker cp ./ wordpress-test:/tmp/plugin-source
+
+          docker exec wordpress-test bash -c '
+            mkdir -p /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator-personal
+            cp -a /tmp/plugin-source/. /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator-personal/
+            php /tmp/wp-cli.phar plugin activate wp-ultimate-pdf-generator-personal --allow-root
+          '
+
