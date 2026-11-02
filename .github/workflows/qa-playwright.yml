@@ -15,11 +15,47 @@ permissions:
 jobs:
   qa-setup:
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: wordpress
+          MYSQL_USER: wordpress
+          MYSQL_PASSWORD: wordpress
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Confirm QA trigger
+      - name: Start WordPress
         run: |
-          echo "QA workflow triggered successfully"
-          echo "PR Number: ${{ inputs.pr_number }}"
+          docker run -d \
+            --name wordpress-test \
+            --network host \
+            -e WORDPRESS_DB_HOST=127.0.0.1:3306 \
+            -e WORDPRESS_DB_USER=wordpress \
+            -e WORDPRESS_DB_PASSWORD=wordpress \
+            -e WORDPRESS_DB_NAME=wordpress \
+            wordpress:php8.2-apache
+
+      - name: Wait for WordPress
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://localhost:80/wp-admin/install.php > /dev/null; then
+              echo "WordPress server is ready"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "WordPress did not start"
+          docker logs wordpress-test
+          exit 1
