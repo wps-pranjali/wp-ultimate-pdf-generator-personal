@@ -83,3 +83,31 @@ jobs:
             php /tmp/wp-cli.phar plugin activate wp-ultimate-pdf-generator-personal --allow-root
           '
 
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Playwright dependencies
+        working-directory: tests/e2e
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: Run Playwright Smoke Tests
+        working-directory: tests/e2e
+        env:
+          WP_BASE_URL: http://localhost
+        run: npm run test:smoke
+
+      - name: Upload Playwright Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-qa-reports
+          path: |
+            tests/e2e/playwright-report/
+            tests/e2e/test-results/
+          if-no-files-found: ignore
+
