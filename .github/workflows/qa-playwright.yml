@@ -74,13 +74,12 @@ jobs:
               --skip-email \
               --allow-root
           '
-
           docker cp ./ wordpress-test:/tmp/plugin-source
 
           docker exec wordpress-test bash -c '
-            mkdir -p /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator-personal
-            cp -a /tmp/plugin-source/. /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator-personal/
-            php /tmp/wp-cli.phar plugin activate wp-ultimate-pdf-generator-personal --allow-root
+            mkdir -p /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator
+            cp -a /tmp/plugin-source/. /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator/
+            php /tmp/wp-cli.phar plugin activate wp-ultimate-pdf-generator --allow-root
           '
 
       - name: Verify PDF Generator Plugin Activation
