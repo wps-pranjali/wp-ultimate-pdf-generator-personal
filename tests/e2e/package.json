@@ -1,0 +1,16 @@
+
+{
+  "name": "wordpress-plugin-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E automation for WordPress PDF Generator plugin",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:list": "playwright test --list"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0"
+  }
+}

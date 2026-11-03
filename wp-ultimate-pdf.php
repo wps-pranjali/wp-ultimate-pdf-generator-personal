@@ -108,7 +108,12 @@ if ( ! class_exists( 'mwbpdf' ) ) {
 				$mwb_pdf_license_hash = get_option( 'mwb_pdf_license_hash' );
 				$mwb_pdf_license_key = get_option( 'mwb_pdf_license_key' );
 				$mwb_pdf_license_plugin = get_option( 'mwb_pdf_plugin_name' );
-				$mwb_pdf_hash = md5( $_SERVER['HTTP_HOST'] . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+                $mwb_pdf_host = isset( $_SERVER['HTTP_HOST'] )
+                ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) )
+                : wp_parse_url( home_url(), PHP_URL_HOST );
+
+                $mwb_pdf_hash = md5( $mwb_pdf_host . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+
 				if ( $mwb_pdf_license_hash == $mwb_pdf_hash ) {
 					add_filter( 'page_row_actions', array( $this, 'ptp_add_export_to_pdf_option_hier' ), 10, 2 );
 					add_filter( 'post_row_actions', array( $this, 'ptp_add_export_to_pdf_option_nhier' ), 10, 2 );
@@ -119,7 +124,12 @@ if ( ! class_exists( 'mwbpdf' ) ) {
 				$mwb_pdf_license_hash = get_option( 'mwb_pdf_license_hash' );
 				$mwb_pdf_license_key = get_option( 'mwb_pdf_license_key' );
 				$mwb_pdf_license_plugin = get_option( 'mwb_pdf_plugin_name' );
-				$mwb_pdf_hash = md5( $_SERVER['HTTP_HOST'] . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+                $mwb_pdf_host = isset( $_SERVER['HTTP_HOST'] )
+                ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) )
+                : wp_parse_url( home_url(), PHP_URL_HOST );
+
+                $mwb_pdf_hash = md5( $mwb_pdf_host . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+
 				if ( $mwb_pdf_license_hash == $mwb_pdf_hash ) {
 					add_action( 'template_redirect', array( $this, 'ptp_generate_post_to_pdf' ) );
 					add_filter( 'the_content', array( $this, 'ptp_add_pdf_link' ) );
@@ -128,7 +138,12 @@ if ( ! class_exists( 'mwbpdf' ) ) {
 			$mwb_pdf_license_hash = get_option( 'mwb_pdf_license_hash' );
 			$mwb_pdf_license_key = get_option( 'mwb_pdf_license_key' );
 			$mwb_pdf_license_plugin = get_option( 'mwb_pdf_plugin_name' );
-			$mwb_pdf_hash = md5( $_SERVER['HTTP_HOST'] . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+            $mwb_pdf_host = isset( $_SERVER['HTTP_HOST'] )
+            ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) )
+            : wp_parse_url( home_url(), PHP_URL_HOST );
+
+            $mwb_pdf_hash = md5( $mwb_pdf_host . $mwb_pdf_license_plugin . $mwb_pdf_license_key );
+
 			register_activation_hook( __FILE__, array( $this, 'ptp_export_install' ) );
 			if ( $mwb_pdf_license_hash == $mwb_pdf_hash ) {
 				add_filter( 'cron_schedules', array( $this, 'ptp_pdfscheduleduration' ) );
@@ -5409,11 +5424,21 @@ function enqueue_select2_jquery() {
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_select2_jquery' );
 // Auto update.
+
 $wp_pdf_license_key_pre = get_option( 'mwb_pdf_license_key', '' );
+
+// Default license key for CLI and non-HTTP requests.
+$wp_pdf_license_key = $wp_pdf_license_key_pre;
+
 if ( isset( $_SERVER['HTTP_HOST'] ) ) {
-	$wp_pdf_license_key = get_option( 'mwb_pdf_license_key' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ), $wp_pdf_license_key_pre );
+    $wp_pdf_license_key = get_option(
+        'mwb_pdf_license_key' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ),
+        $wp_pdf_license_key_pre
+    );
 }
+
 define( 'WP_PDF_LICENSE_KEY', $wp_pdf_license_key );
+
 define( 'WP_PDF_FILE', __FILE__ );
 define( 'WP_PDF_PLUGIN_VERSION', '1.3.4' );
 $wp_pdf_update_check = 'https://wpswings.com/pluginupdates/codecanyon/wp-ultimate-pdf-generator/update.php';
