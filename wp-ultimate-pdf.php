@@ -5409,11 +5409,21 @@ function enqueue_select2_jquery() {
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_select2_jquery' );
 // Auto update.
+
 $wp_pdf_license_key_pre = get_option( 'mwb_pdf_license_key', '' );
+
+// Default license key for CLI and non-HTTP requests.
+$wp_pdf_license_key = $wp_pdf_license_key_pre;
+
 if ( isset( $_SERVER['HTTP_HOST'] ) ) {
-	$wp_pdf_license_key = get_option( 'mwb_pdf_license_key' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ), $wp_pdf_license_key_pre );
+    $wp_pdf_license_key = get_option(
+        'mwb_pdf_license_key' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ),
+        $wp_pdf_license_key_pre
+    );
 }
+
 define( 'WP_PDF_LICENSE_KEY', $wp_pdf_license_key );
+
 define( 'WP_PDF_FILE', __FILE__ );
 define( 'WP_PDF_PLUGIN_VERSION', '1.3.4' );
 $wp_pdf_update_check = 'https://wpswings.com/pluginupdates/codecanyon/wp-ultimate-pdf-generator/update.php';
