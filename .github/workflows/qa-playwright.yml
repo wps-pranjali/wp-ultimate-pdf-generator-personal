@@ -83,6 +83,13 @@ jobs:
             php /tmp/wp-cli.phar plugin activate wp-ultimate-pdf-generator-personal --allow-root
           '
 
+      - name: Verify PDF Generator Plugin Activation
+        run: |
+          docker exec wordpress-test \
+            php /tmp/wp-cli.phar plugin list \
+            --status=active \
+            --allow-root
+
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
