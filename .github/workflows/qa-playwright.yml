@@ -1,4 +1,3 @@
-
 name: WordPress QA Playwright
 
 on:
@@ -15,11 +14,125 @@ permissions:
 jobs:
   qa-setup:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    timeout-minutes: 25
 
-      - name: Confirm QA trigger
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: wordpress
+          MYSQL_USER: wordpress
+          MYSQL_PASSWORD: wordpress
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
+    steps:
+      - name: Validate PR Number
+        env:
+          PR_NUMBER: ${{ inputs.pr_number }}
         run: |
-          echo "QA workflow triggered successfully"
-          echo "PR Number: ${{ inputs.pr_number }}"
+          if ! [[ "$PR_NUMBER" =~ ^[1-9][0-9]*$ ]]; then
+            echo "Invalid PR number"
+            exit 1
+          fi
+
+      - name: Checkout PR Code
+        uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ inputs.pr_number }}/head
+          persist-credentials: false
+
+      - name: Start WordPress
+        run: |
+          docker run -d \
+            --name wordpress-test \
+            --network host \
+            -e WORDPRESS_DB_HOST=127.0.0.1:3306 \
+            -e WORDPRESS_DB_USER=wordpress \
+            -e WORDPRESS_DB_PASSWORD=wordpress \
+            -e WORDPRESS_DB_NAME=wordpress \
+            wordpress:php8.2-apache
+
+      - name: Wait for WordPress
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://localhost/wp-admin/install.php > /dev/null; then
+              echo "WordPress server is ready"
+              exit 0
+            fi
+            sleep 5
+          done
+
+          echo "WordPress did not start"
+          docker logs wordpress-test
+          exit 1
+
+      - name: Install WordPress and Activate Plugin
+        run: |
+          docker exec wordpress-test bash -c '
+            curl -fsSL \
+              https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
+              -o /tmp/wp-cli.phar
+
+            php /tmp/wp-cli.phar core install \
+              --url=http://localhost \
+              --title="WordPress QA Testing" \
+              --admin_user=admin \
+              --admin_password=qa-test-password \
+              --admin_email=qa@example.com \
+              --skip-email \
+              --allow-root
+          '
+
+          docker cp ./ wordpress-test:/tmp/plugin-source
+
+          docker exec wordpress-test bash -c '
+            mkdir -p /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator
+
+            cp -a /tmp/plugin-source/. \
+              /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator/
+
+            php /tmp/wp-cli.phar plugin activate \
+              wp-ultimate-pdf-generator \
+              --allow-root
+          '
+
+      - name: Verify Plugin Activation
+        run: |
+          docker exec wordpress-test \
+            php /tmp/wp-cli.phar plugin is-active \
+            wp-ultimate-pdf-generator \
+            --allow-root
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Playwright Dependencies
+        working-directory: tests/e2e
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: Run Playwright Smoke Tests
+        working-directory: tests/e2e
+        env:
+          WP_BASE_URL: http://localhost
+        run: npm run test:smoke
+
+      - name: Upload Playwright Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-qa-reports
+          path: |
+            tests/e2e/playwright-report/
+            tests/e2e/test-results/
+          if-no-files-found: ignore
