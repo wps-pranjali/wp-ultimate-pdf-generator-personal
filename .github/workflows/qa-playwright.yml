@@ -45,7 +45,7 @@ jobs:
             exit 1
           fi
 
-      # Step 2: Checkout PR code
+      # Step 2: Checkout actual PR code
       - name: Checkout PR Code
         uses: actions/checkout@v4
         with:
@@ -137,7 +137,7 @@ jobs:
           npm install
           npx playwright install --with-deps chromium
 
-      # Step 10: Run smoke tests
+      # Step 10: Run Playwright smoke tests
       - name: Run Playwright Smoke Tests
         working-directory: tests/e2e
         env:
@@ -145,7 +145,7 @@ jobs:
         run: |
           npm run test:smoke
 
-      # Step 11: Upload reports
+      # Step 11: Upload Playwright reports
       - name: Upload Playwright Reports
         if: always()
         uses: actions/upload-artifact@v4
