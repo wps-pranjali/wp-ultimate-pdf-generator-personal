@@ -1,6 +1,6 @@
 
 name: WordPress QA Playwright
-
+run-name: QA PR #${{ inputs.pr_number }}
 on:
   workflow_dispatch:
     inputs:
