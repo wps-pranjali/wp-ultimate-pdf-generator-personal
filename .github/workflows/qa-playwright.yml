@@ -1,10 +1,11 @@
+
 name: WordPress QA Playwright
 
 on:
   workflow_dispatch:
     inputs:
       pr_number:
-        description: "Pull Request number"
+        description: "Pull Request number to test"
         required: true
         type: string
 
@@ -13,6 +14,7 @@ permissions:
 
 jobs:
   qa-setup:
+    name: WordPress Playwright QA
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -33,6 +35,7 @@ jobs:
           --health-retries=10
 
     steps:
+      # Step 1: Validate PR number
       - name: Validate PR Number
         env:
           PR_NUMBER: ${{ inputs.pr_number }}
@@ -42,12 +45,14 @@ jobs:
             exit 1
           fi
 
+      # Step 2: Checkout PR code
       - name: Checkout PR Code
         uses: actions/checkout@v4
         with:
           ref: refs/pull/${{ inputs.pr_number }}/head
           persist-credentials: false
 
+      # Step 3: Start WordPress
       - name: Start WordPress
         run: |
           docker run -d \
@@ -59,6 +64,7 @@ jobs:
             -e WORDPRESS_DB_NAME=wordpress \
             wordpress:php8.2-apache
 
+      # Step 4: Wait for WordPress
       - name: Wait for WordPress
         run: |
           for i in {1..30}; do
@@ -73,7 +79,8 @@ jobs:
           docker logs wordpress-test
           exit 1
 
-      - name: Install WordPress and Activate Plugin
+      # Step 5: Install WordPress
+      - name: Install WordPress
         run: |
           docker exec wordpress-test bash -c '
             curl -fsSL \
@@ -90,10 +97,14 @@ jobs:
               --allow-root
           '
 
+      # Step 6: Install and activate PDF Generator
+      - name: Install and Activate PDF Generator
+        run: |
           docker cp ./ wordpress-test:/tmp/plugin-source
 
           docker exec wordpress-test bash -c '
-            mkdir -p /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator
+            mkdir -p \
+              /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator
 
             cp -a /tmp/plugin-source/. \
               /var/www/html/wp-content/plugins/wp-ultimate-pdf-generator/
@@ -103,6 +114,7 @@ jobs:
               --allow-root
           '
 
+      # Step 7: Verify plugin activation
       - name: Verify Plugin Activation
         run: |
           docker exec wordpress-test \
@@ -110,23 +122,30 @@ jobs:
             wp-ultimate-pdf-generator \
             --allow-root
 
+          echo "PDF Generator plugin is active"
+
+      # Step 8: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
+      # Step 9: Install Playwright
       - name: Install Playwright Dependencies
         working-directory: tests/e2e
         run: |
           npm install
           npx playwright install --with-deps chromium
 
+      # Step 10: Run smoke tests
       - name: Run Playwright Smoke Tests
         working-directory: tests/e2e
         env:
           WP_BASE_URL: http://localhost
-        run: npm run test:smoke
+        run: |
+          npm run test:smoke
 
+      # Step 11: Upload reports
       - name: Upload Playwright Reports
         if: always()
         uses: actions/upload-artifact@v4
