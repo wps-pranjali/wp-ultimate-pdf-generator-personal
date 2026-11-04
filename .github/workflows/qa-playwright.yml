@@ -68,9 +68,7 @@ jobs:
       - name: Wait for WordPress
         run: |
           for i in {1..30}; do
-            if curl -fsS \
-              http://localhost/wp-admin/install.php \
-              > /dev/null; then
+            if curl -fsS http://localhost/wp-admin/install.php > /dev/null; then
               echo "WordPress server is ready"
               exit 0
             fi
@@ -99,7 +97,7 @@ jobs:
               --allow-root
           '
 
-      # Step 6: Copy and activate plugin
+      # Step 6: Install and activate PDF Generator
       - name: Install and Activate PDF Generator
         run: |
           docker cp ./ wordpress-test:/tmp/plugin-source
@@ -139,7 +137,7 @@ jobs:
           npm install
           npx playwright install --with-deps chromium
 
-      # Step 10: Execute smoke tests
+      # Step 10: Run Playwright smoke tests
       - name: Run Playwright Smoke Tests
         working-directory: tests/e2e
         env:
@@ -147,7 +145,7 @@ jobs:
         run: |
           npm run test:smoke
 
-      # Step 11: Upload reports
+      # Step 11: Upload Playwright reports
       - name: Upload Playwright Reports
         if: always()
         uses: actions/upload-artifact@v4
